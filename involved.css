@@ -1,0 +1,5 @@
+.involvement-container { max-width: 800px; margin: 5rem auto; padding: 2rem; background: white; border-radius: 10px; }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: .5rem; }
+.form-group input, .form-group textarea { width: 100%; padding: .8rem; border: 1px solid #ddd; }
+.donation-box { text-align: center; margin-top: 3rem; padding: 2rem; background: var(--accent-yellow); border-radius: 10px; }
