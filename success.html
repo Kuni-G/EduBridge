@@ -1,47 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduBridge Africa | Bridging the Digital Divide</title>
-    <link rel="stylesheet" href="success.css">
-    <link rel="stylesheet" href="common.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Read inspiring success stories from EduBridge Africa students who transformed their lives through digital education and mentorship.">
+    <title>Success Stories | EduBridge Africa</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">EduBridge Africa</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="programs.html">Programs</a></li>
-                    <li><a href="success.html">Success Stories</a></li>
-                </ul>
-            </nav>
-            <a href="involved.html" class="btn btn-primary">Get Involved</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle sr-only">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-menu">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="success.html" class="active">Success Stories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="involved.html" class="btn btn-primary nav-cta-mobile">Get Involved</a>
+            </div>
+            <div class="nav-cta">
+                <a href="involved.html" class="btn btn-primary">Get Involved</a>
+            </div>
+            <label for="menu-toggle" class="nav-overlay"></label>
         </div>
     </header>
-<section class="page-header" style="background-color: var(--primary-orange);">
-    <div class="container">
-        <h1>Success Stories</h1>
-        <p>Real impact, real people.</p>
-    </div>
-</section>
 
-<section class="content-section">
-    <div class="container">
-        <div class="grid-3">
-            <div class="card">
-                <div class="card-content">
-                    <p><em>"Before EduBridge, I had never touched a computer. Now, I am designing websites for local businesses in my town."</em></p>
-                    <hr style="margin: 1rem 0; border: 0; border-top: 1px solid #eee;">
-                    <h4 style="color: var(--secondary-green);">Amina, 19</h4>
-                    <small>Web Development Graduate</small>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Success Stories</h1>
+            <p>Real impact, real people. See how our programs are changing lives across Africa.</p>
+            <div class="accent-bar"></div>
+        </div>
+    </section>
+
+    <!-- Featured Story -->
+    <section class="featured-story">
+        <div class="container">
+            <div class="featured-container">
+                <div class="featured-image">
+                    <img src="images/Amran-Tewodros-Ethiopia-scaled.jpg"
+                        alt="Amina, a web development graduate from EduBridge">
+                </div>
+                <div class="featured-text">
+                    <span class="tag">Featured Graduate</span>
+                    <h2>Meet Amina — From Zero to Web Developer</h2>
+                    <p class="quote-text">"Before EduBridge, I had never touched a computer. Now, I am designing
+                        websites for local businesses in my town and earning my own income. This program did not just
+                        teach me code — it gave me a future."</p>
+                    <p><strong>Amina K., 19</strong> — Web Development Graduate, Rural Tech Hub Kisumu</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Voices of Change</h2>
+                <p>Hear from the students whose lives have been transformed.</p>
             </div>
-    </div>
-</section>
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"The mentorship program connected me with a software engineer in
+                        Germany. She helped me build my portfolio and I landed my first freelance job within three
+                        months."</p>
+                    <div class="student-info">
+                        <img src="https://ui-avatars.com/api/?name=Ermias+T&background=0B3D2E&color=C8A23D&size=100"
+                            alt="Ermias T.">
+                        <div>
+                            <h4>Ermias T., 21</h4>
+                            <span>Mentorship Match Graduate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"I used to walk 10 kilometers to find an internet cafe. Now we have a
+                        tech hub in our own school. I have learned Python and I am building an app to help farmers in
+                        our village track weather patterns."</p>
+                    <div class="student-info">
+                        <img src="https://ui-avatars.com/api/?name=Samuel+O&background=14634A&color=fff&size=100"
+                            alt="Samuel O.">
+                        <div>
+                            <h4>Samuel H., 17</h4>
+                            <span>Rural Tech Hub Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"As a girl in my village, people said technology was not for me.
+                        EduBridge proved them wrong. I now teach basic computer skills to other girls in my community
+                        every weekend."</p>
+                    <div class="student-info">
+                        <img src="https://ui-avatars.com/api/?name=Abel+A&background=C8A23D&color=0B3D2E&size=100"
+                            alt="Abel A.">
+                        <div>
+                            <h4>Abel A., 16</h4>
+                            <span>Digital Skills for Girls</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                </div>
+    </section>
+
+    <!-- Before / After Impact -->
+    <section class="impact-comparison">
+        <div class="container">
+            <div class="section-title">
+                <h2>Before and After EduBridge</h2>
+                <p>The tangible difference our programs make in communities.</p>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <h3>Before</h3>
+                    <p>Only 12% of students in partner villages had ever used a computer. Internet access was virtually
+                        non-existent, and digital career paths seemed impossible for rural youth.</p>
+                </div>
+                <div class="comparison-item">
+                    <h3>After</h3>
+                    <p>Over 85% of students now have regular computer access. 40% of graduates have gone on to earn
+                        income through tech-related work or further education in STEM fields.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="success-cta">
+        <div class="container">
+            <h2>Want to Be Part of the Next Success Story?</h2>
+            <p>Whether you volunteer your time, donate equipment, or mentor a student, your contribution creates real,
+                lasting change.</p>
+            <a href="involved.html" class="btn btn-primary">Get Involved Today</a>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

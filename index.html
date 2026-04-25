@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="EduBridge Africa empowers youth in rural communities with digital literacy, mentorship, and technology access. Bridging the digital divide across Africa.">
     <title>EduBridge Africa | Bridging the Digital Divide</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">EduBridge Africa</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="programs.html">Programs</a></li>
-                    <li><a href="success.html">Success Stories</a></li>
-                </ul>
-            </nav>
-            <a href="involved.html" class="btn btn-primary">Get Involved</a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle sr-only">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="nav-menu">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="success.html">Success Stories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="involved.html" class="btn btn-primary nav-cta-mobile">Get Involved</a>
+            </div>
+            <div class="nav-cta">
+                <a href="involved.html" class="btn btn-primary">Get Involved</a>
+            </div>
+            <label for="menu-toggle" class="nav-overlay"></label>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Empowering the Next Generation of African Innovators</h1>
-                <p>We provide digital literacy, mentorship, and technology access to youth in rural communities, turning potential into opportunity.</p>
-                <a href="programs.html" class="btn btn-primary">Explore Programs</a>
-                <a href="get-involved.html" class="btn btn-secondary">Volunteer With Us</a>
+                <h1>Empowering the Next Generation of <span>African Innovators</span></h1>
+                <p>We provide digital literacy, mentorship, and technology access to youth in our communities, turning
+                    potential into opportunity.</p>
+                <div class="hero-buttons">
+                    <a href="programs.html" class="btn btn-primary">Explore Programs</a>
+                    <a href="involved.html" class="btn btn-outline-white">Volunteer With Us</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/500x350/27AE60/FFFFFF?text=Students+Learning+on+Laptops" alt="Students using laptops in a classroom">
+                <img src="/images/Ethiopia.png" alt="A girl working with a computer">
             </div>
         </div>
     </section>
 
+    <!-- Impact Stats -->
     <section class="impact">
         <div class="container">
-            <h2>Our Impact</h2>
+            <h2>Our Impact in Numbers</h2>
+            <p>Since 2015, we have been transforming communities across the continent.</p>
             <div class="impact-grid">
                 <div class="impact-stat">
                     <h3>1,000+</h3>
@@ -58,52 +84,49 @@
         </div>
     </section>
 
-    <section class="programs">
+    <!-- Featured Programs -->
+    <section class="programs-section">
         <div class="container">
-            <h2>Featured Programs</h2>
+            <div class="section-title">
+                <h2>Featured Programs</h2>
+                <p>Discover the initiatives that are changing lives across the continent.</p>
+            </div>
             <div class="program-grid">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200/E67E22/FFFFFF?text=Digital+Skills+for+Girls" alt="Digital Skills for Girls">
+                    <div class="card-img-wrapper">
+                        <img src="images/Bethlehem-Meretue.png" alt="girls coding on laptops">
+                    </div>
                     <div class="card-content">
-                        <h3>Digital Skills for Girls</h3>
-                        <p>Closing the gender gap in tech by providing specialized coding and design bootcamps for young women.</p>
+                        <h3>Digital Skills for girls</h3>
+                        <p>Closing the gender gap in tech by providing specialized coding and design bootcamps for young
+                            women.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200/F1C40F/2C3E50?text=Rural+Tech+Hubs" alt="Rural Tech Hubs">
+                    <div class="card-img-wrapper">
+                        <img src="images/Ethiopia2.png" alt="Solar-powered computer lab in a rural school">
+                    </div>
                     <div class="card-content">
-                        <h3>Rural Tech Hubs</h3>
-                        <p>Equipping rural schools with solar-powered computer labs and reliable internet access.</p>
+                        <h3>Tech Hubs</h3>
+                        <p>Equipping schools with solar-powered computer labs and reliable internet access.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200/27AE60/FFFFFF?text=Mentorship+Match" alt="Mentorship Match">
+                    <div class="card-img-wrapper">
+                        <img src="images/Ethiopia.png" alt="Student on a video mentorship call">
+                    </div>
                     <div class="card-content">
                         <h3>Mentorship Match</h3>
-                        <p>Connecting eager students with global tech professionals for guidance and career planning.</p>
+                        <p>Connecting eager students with global tech professionals for guidance and career planning.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-info">
-                <h3>EduBridge Africa</h3>
-                <p>123 Innovation Drive, Nairobi, Kenya</p>
-                <p>Email: hello@edubridge.org | Phone: +254 700 000 000</p>
-            </div>
-            <div class="footer-newsletter">
-                <h3>Join Our Newsletter</h3>
-                <form class="newsletter-form">
-                    <label for="email" class="sr-only">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </footer>
+
 
 </body>
+
 </html>
